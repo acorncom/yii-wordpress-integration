@@ -1,4 +1,9 @@
 <?php
+
+define('WP_USE_THEMES', true);
+$wp_did_header = true;
+require_once('wordpress/wp-load.php');
+
 // set environment
 require_once(dirname(__FILE__) . '/../protected/extensions/yii-environment/Environment.php');
 $env = new Environment();
