@@ -35,6 +35,12 @@ return array(
 			'gii' => array(
 				'class' => 'system.gii.GiiModule',
 				'password' => false,
+				'ipFilters'=> array('localhost', '192.168.2.5'),
+                'newFileMode'=>0644,
+                'newDirMode'=>0777,
+				'generatorPaths' => array(
+					'ext.giix-core', // giix generators
+				),
 			),
 		),
 
