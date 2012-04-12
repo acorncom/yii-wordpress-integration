@@ -1,0 +1,13 @@
+# JS and CSS minified files that can be recreated
+data/assets/*
+data/js/cache/*
+data/css/cache/*
+
+# We prevent sensitive data from ending up in our repo by ignoring these files
+protected/config/mode.php
+protected/config/local.php
+
+# Yii temp files we don't want to be bothered about
+protected/runtime/*
+protected/data/*.db
+protected/tests/report/*
