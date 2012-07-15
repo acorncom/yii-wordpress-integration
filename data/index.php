@@ -7,6 +7,9 @@ require_once('wordpress/wp-load.php');
 // set environment
 require_once(dirname(__FILE__) . '/../protected/extensions/yii-environment/Environment.php');
 $env = new Environment();
+
+require_once(dirname(__FILE__) . '/../protected/components/WordpressRouter.php');
+$router = new WordpressRouter();
  
 // set debug and trace level
 defined('YII_DEBUG') or define('YII_DEBUG', $env->yiiDebug);

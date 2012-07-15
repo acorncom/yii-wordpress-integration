@@ -56,8 +56,6 @@ return array(
 					'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 					'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 					'/contact'=>'site/contact',
-					'*'=>'wpFallback/index',
-//					'/sample-page'=>'wordpress2/index',
 				),
 			),
 
@@ -73,7 +71,7 @@ return array(
 			// Error handler
 			'errorHandler'=>array(
 				// use 'site/error' action to display errors
-				'errorAction'=>'wpFallback/index',
+				'errorAction'=>'site/error',
 			),
 
 		),
